@@ -214,7 +214,7 @@ ENV/
 Thumbs.db
 
 # Project specific
-data/results/*
-data/images/*
-!data/results/example_results.txt
-!data/images/example_image.png
+# data/results/*
+# data/images/*
+# !data/results/example_results.txt
+# !data/images/example_image.png
