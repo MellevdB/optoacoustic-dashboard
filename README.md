@@ -21,7 +21,7 @@ notebooks/
 └── dashboard.ipynb    # Code + narrative for generating the visualizations
 
 pdf/
-└── final_report.pdf   # Exported LaTeX-based PDF with all results and discussion
+└── Assignment_2__Data_Story.pdf   # Exported LaTeX-based PDF with all results and discussion
 
 environment.yml        # Conda environment file
 README.md              # This file
