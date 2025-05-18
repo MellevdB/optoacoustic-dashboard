@@ -1,19 +1,33 @@
-# Data Management and Visualisation Course
+# Optoacoustic Image Quality Dashboard
 
-This repository contains course materials for the Data Management and Visualisation course. It includes raw and processed data, analysis and visualization scripts, Jupyter notebooks, and additional documentation.
+This project visualizes metric results and reconstructed images from a master's thesis on photoacoustic imaging. Results include metrics like SSIM, VIF, and BRISQUE across different datasets and sampling levels.
 
-## Project Overview
-This repository is organized as follows:
-- **README.md:** An overview of the project, course goals, and repository structure.
-- **/data:** Contains subfolders for raw data (/data/raw) and processed data (/data/processed).
-- **/scripts:** Stores scripts used for data cleaning, analysis, and visualization.
-- **/notebooks:** Contains Jupyter notebooks for interactive analysis and visualisation.
-- **/docs:** Includes course materials, notes, and any additional documentation.
+The project is structured to allow easy plotting of results and inclusion of sample images for visual comparison. Results are stored in `.txt` format, and image examples in `.png`.
 
-## Course Goals and Learning Outcomes
-By the end of this course, you will be able to explain and apply effective data management practices, transform raw data into valid, actionable information, and design clear visualisations to communicate insights.
+## Structure
 
-## How to Contribute
-- Follow the folder structure for organizing your work.
-- Use clear commit messages to track changes.
-- Feel free to add further documentation or scripts as you progress through the course.
+- `data/results/`: Metric result `.txt` files
+- `data/images/`: Reconstructed image samples (`.png`)
+- `notebooks/dashboard.ipynb`: Dashbaord with text and code 
+- `pdf/`: Final report or dashboard as LaTeX-generated PDF
+
+## Installation
+
+### Using Conda (Recommended)
+```bash
+# Create the environment
+conda env create -f environment.yml
+
+# Activate the environment
+conda activate optoacoustic-dashboard
+```
+
+## Dependencies
+
+The project requires the following Python packages:
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- jupyter
+- pillow
